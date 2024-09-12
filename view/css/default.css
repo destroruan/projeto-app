@@ -8,18 +8,52 @@
 
 :root {
     --vermelho: #fa2525;
-    --branco: #ffff;
-    --preto: #0000;
-    --cinza: #000F;
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza: #4444;
 }
-
 body, html {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     width: 100vw;
     height: 100vh;
 }
+header {
+    border-bottom: 1px solid var(--vermelho);
+    box-shadow: 1px 1px 5px 5px var(--cinza);
+    text-align: center;
+}
 main {
     width: 100%;
     background-color: aquamarine;
+}
+form > input{
+    padding: 5px;
+}
+form > button{
+    padding: 7px;
+    cursor: pointer;
+    background-color: var(--vermelho);
+    border-radius: 5px;
+    border: none;
+    color: var(--branco);
+    font-weight: bold;
+}
+form > button:hover{
+    background-color: var(--branco);
+    color: var(--vermelho);
+}
+#logotipo-top {
+    display: inline-block;
+    background: url(../logotipo/composta.png) no-repeat center center;
+    background-size: contain;  
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+}
+.top-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
