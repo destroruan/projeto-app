@@ -9,6 +9,8 @@
     --branco: #ffffff;
     --preto: #000000;
     --cinza: #4444;
+    --fonte-padrao: 16px;
+    --fonte-botao: 10px;
 }
 body, html {
     font-family: "Raleway", sans-serif;
@@ -50,7 +52,7 @@ a:hover {
     color: var(--vermelho);
 }
 menu.top a {
-    font-size: ;
+    font-size: var(--fonte-botao);
 }
 #logotipo-top {
     display: inline-block;
