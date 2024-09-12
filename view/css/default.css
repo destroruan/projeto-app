@@ -9,8 +9,9 @@
     --branco: #ffffff;
     --preto: #000000;
     --cinza: #4444;
+    --fonte-titulo: 24px;
     --fonte-padrao: 16px;
-    --fonte-botao: 10px;
+    --fonte-botao: 14px;
 }
 body, html {
     font-family: "Raleway", sans-serif;
@@ -24,7 +25,6 @@ header {
 }
 main {
     width: 100%;
-    background-color: aquamarine;
 }
 form > input{
     padding: 5px;
@@ -38,22 +38,27 @@ form > button{
     border: none;
     color: var(--branco);
     font-weight: bold;
+    font-size: var(--fonte-botao);
 }
 form > button:hover{
     background-color: var(--branco);
     color: var(--vermelho);
 }
 a {
+    font-size: var(--fonte-botao);
     text-decoration: none;
     color: var(--preto);
     transition: color 0.3s;
 }
+p {
+    font-size: var(--fonte-padrao);
+}
+h1 {
+    font-size: var(--fonte-titulo);
+}
 a:hover {
     font-weight: bold;
     color: var(--vermelho);
-}
-menu.top a {
-    font-size: var(--fonte-botao);
 }
 #logotipo-top {
     display: inline-block;
@@ -75,11 +80,28 @@ menu.top a {
 }
 .departamentos li {
     display: inline-block;
-    padding: 5px;
+    padding: 5px 10px;
 }
 .departamentos li:hover{
     background-color: rgba(250, 37, 37, 0.10);
 }
 div.noticias {
-    width: 80%;
+    width: 90%;
+    margin: auto;
+    border: 1px solid var(--cinza);
+}
+div.not-unid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.not-unid > div {
+    display: inline-block;
+}
+div.foto {
+    margin-right: 10px;
+}
+div.foto > img {
+    width: 100px;
+    height: 100px;
 }
