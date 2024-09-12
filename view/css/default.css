@@ -1,11 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0px;
     padding: 0px;
 }
-
 :root {
     --vermelho: #fa2525;
     --branco: #ffffff;
@@ -19,7 +17,6 @@ body, html {
     height: 100vh;
 }
 header {
-    border-bottom: 1px solid var(--vermelho);
     box-shadow: 1px 1px 5px 5px var(--cinza);
     text-align: center;
 }
@@ -29,6 +26,7 @@ main {
 }
 form > input{
     padding: 5px;
+    border: 1px solid var(--cinza);
 }
 form > button{
     padding: 7px;
@@ -43,6 +41,17 @@ form > button:hover{
     background-color: var(--branco);
     color: var(--vermelho);
 }
+a {
+    text-decoration: none;
+    color: var(--preto);
+    transition: color 0.3s;
+}
+a:hover {
+    color: var(--vermelho);
+}
+menu.top a {
+    font-size: ;
+}
 #logotipo-top {
     display: inline-block;
     background: url(../logotipo/composta.png) no-repeat center center;
@@ -56,4 +65,15 @@ form > button:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
+    border-bottom: 1px solid var(--vermelho);
+}
+.departamentos {
+    border-bottom: 1px solid var(--vermelho);
+}
+.departamentos li {
+    display: inline-block;
+    padding: 5px;
+}
+.departamentos li:hover{
+    background-color: rgba(250, 37, 37, 0.10);
 }
