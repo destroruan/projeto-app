@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0px;
@@ -6,51 +7,12 @@
 }
 
 body, html {
-    font-family: Noto Sans;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
     width: 100vw;
     height: 100vh;
-}
-header > div.top-left{
-    margin: auto;
-    display: flex;
-    margin-left: 20vw;
-    align-items: center;
-    padding: 10px;
-}
-div#logotipo {
-    width: 32px;
-    height: 32px;
-    background: url(../logotipo/favicon.png) no-repeat;
-    background-size: 100%;
-    margin-right: 5px;
-}
-header > div.top-left > h1 {
-    font-size: small;
-    font-style: italic;
 }
 main {
     width: 100%;
     background-color: aquamarine;
-}
-div.top-noticias {
-    height: 20px;
-    text-align: center;
-    align-items: center;
-    background-color: red;
-    padding: 5px;   
-}
-div.top-noticias > h2{
-    font-size: 1em;
-    color: white;
-    display: inline-block;
-}
-div.top-noticias > p {
-    margin-left: 10px;
-    font-size: 0.9em;
-    color: whitesmoke;
-    display: inline-block;
-}
-menu {
-    display: inline-block;
-    font-size: 0.9em;
 }
