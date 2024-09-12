@@ -49,6 +49,7 @@ a {
     transition: color 0.3s;
 }
 a:hover {
+    font-weight: bold;
     color: var(--vermelho);
 }
 menu.top a {
@@ -78,4 +79,7 @@ menu.top a {
 }
 .departamentos li:hover{
     background-color: rgba(250, 37, 37, 0.10);
+}
+div.noticias {
+    width: 80%;
 }
