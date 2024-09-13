@@ -84,4 +84,5 @@ a:hover {
 }
 .departamentos li:hover{
     background-color: rgba(250, 37, 37, 0.10);
+    border-radius: 10px;
 }
