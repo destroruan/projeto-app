@@ -85,23 +85,3 @@ a:hover {
 .departamentos li:hover{
     background-color: rgba(250, 37, 37, 0.10);
 }
-div.noticias {
-    width: 90%;
-    margin: auto;
-    border: 1px solid var(--cinza);
-}
-div.not-unid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-div.not-unid > div {
-    display: inline-block;
-}
-div.foto {
-    margin-right: 10px;
-}
-div.foto > img {
-    width: 100px;
-    height: 100px;
-}
