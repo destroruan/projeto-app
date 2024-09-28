@@ -1,0 +1,117 @@
+@charset "UTF-8";
+:root {
+    --fonte-titulo: 24px;
+    --fonte-padrao: 16px;
+    --fonte-botao: 14px;
+    --fonte-apoio: 10px;
+}
+body, html {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+}
+header {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: var(--preto);
+    font-style: italic;
+}
+p {
+    font-size: var(--fonte-padrao);
+}
+h1 {
+    font-size: var(--fonte-titulo);
+}
+.titulo-publi {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--preto);
+    font-size: var(--fonte-apoio);
+}
+h1.flex {
+    font-size: var(--fonte-titulo);
+    text-transform: uppercase;
+    color: var(--vermelho);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+label {
+    display: block;
+    font-size: var(--fonte-botao);
+    margin-bottom: 5px;
+    color: var(--preto);
+}
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cinza);
+    border-radius: 5px;
+    font-size: var(--fonte-botao);
+}
+input[type="date"]{
+    display: block;
+    width: 50%;
+}
+button {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--fonte-botao);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: darkred;
+}
+.voltar {
+    color: var(--branco);
+    background-color: var(--cinza);   
+    float: right; 
+}
+.voltar:hover {
+    color: var(--branco);
+    background-color: var(--preto);    
+}
+.message {
+    text-align: center;
+    font-size: var(--fonte-padrao);
+    color: var(--cinza);
+    margin-top: 20px;
+}
+h1.categorias {
+    text-transform: uppercase;
+    padding: 5px;
+    color: var(--branco);
+    max-width: 1080px;
+    background: linear-gradient(to right, var(--vermelho) 10%, rgba(255, 0, 0, 0.2));
+    border-top: 1px inset black;
+    box-shadow: var(--sombra-texto);
+    margin: auto;
+    font-size: var(--fonte-botao);
+
+}
+footer > p {
+    margin-bottom: 0px;
+    font-size: var(--fonte-padrao);
+    padding: 5px;
+}
+@media (max-width: 768px) {
+    h1.flex {
+        font-size: var(--fonte-botao);
+    }
+    footer > p {
+        font-size: var(--fonte-botao);
+    }
+    div.categorias {
+        max-width: 1080px;
+    }
+}
