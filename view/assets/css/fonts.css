@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --fonte-titulo: 24px;
     --fonte-padrao: 16px;
@@ -86,18 +87,6 @@ button:hover {
     font-size: var(--fonte-padrao);
     color: var(--cinza);
     margin-top: 20px;
-}
-h1.categorias {
-    text-transform: uppercase;
-    padding: 5px;
-    color: var(--branco);
-    max-width: 1080px;
-    background: linear-gradient(to right, var(--vermelho) 10%, rgba(255, 0, 0, 0.2));
-    border-top: 1px inset black;
-    box-shadow: var(--sombra-texto);
-    margin: auto;
-    font-size: var(--fonte-botao);
-
 }
 footer > p {
     margin-bottom: 0px;

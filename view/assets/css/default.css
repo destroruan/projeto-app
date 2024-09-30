@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -40,15 +39,11 @@ body, html {
     display: block;
     opacity: 50%;
 }
-#noticiasCarousel,
-#not-destaque {
+#noticiasCarousel {
     position: relative;
     max-width: 99%;
     margin: auto;
     overflow: hidden;
-}
-#not-destaque {
-    box-shadow: var(--sombra-texto);
 }
 .carousel-item {
     display: none;
@@ -65,7 +60,7 @@ body, html {
     margin: auto;
 }
 #info-top {
-    height: 45px;
+    height: 20px;
     background-color: var(--cinza);
 }
 form,
