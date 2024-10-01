@@ -77,6 +77,77 @@ footer {
     box-shadow: var(--sombra);
     text-align: center;
     color: var(--preto);
+}.container {
+    max-width: 790px;
+    margin: 0 auto;
+    display: flex; 
+}
+.destaque {
+    flex: 1; 
+    position: relative;
+    overflow: hidden;
+}
+
+.destaques {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.destaque-item {
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.noticias-adicionais {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 5px; 
+}
+
+.noticia-item {
+    background-size: cover;
+    height: 100px; 
+    display: flex;
+    justify-content: center; 
+    color: black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.destaque-button {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; 
+}
+.destaque-button.prev {
+    left: 10px; 
+}
+.destaque-button.next {
+    right: 10px; 
+}
+.titulo-categoria span {
+    width: 120px;
+    height: 2px;
+    background-color: var(--cinza);
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+.titulo-categoria span em {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: var(--vermelho);
 }
 @media (max-width: 768px) {
     form {

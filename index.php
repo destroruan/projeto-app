@@ -4,7 +4,7 @@ $tipo = "global";
 ?>
 <main>
     <?php include 'view/assets/include/publicidade.php'; ?>
-    <section id="not-destaque"></section>
+    <section id="noticias-destaques"></section>
+    <script src="controller/js/destaque.js"></script>
 </main>
 <?php include 'view/assets/include/footer.php'; ?>
-<script src="controller/js/controle.js"></script>
