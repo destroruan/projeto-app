@@ -18,26 +18,28 @@ if (!empty($noticias)) {
     foreach ($noticias as $index => $noticia) {
         if ($index < 3) {
             echo '<div class="destaque-item" style="background-image: url(\'' . htmlspecialchars($noticia['imagem'], ENT_QUOTES, 'UTF-8') . '\');">';
+            echo '<a href="">';
             echo '<h2>' . htmlspecialchars($noticia['titulo'], ENT_QUOTES, 'UTF-8') . '</h2>';
+            echo '</a>';
             echo '</div>';
         }
     }
-    echo '</div>'; // fim da carousel
+    echo '</div>';
     echo '<button class="destaque-button prev" onclick="moveSlide(-1)">&#10094;</button>';
     echo '<button class="destaque-button next" onclick="moveSlide(1)">&#10095;</button>';
-    echo '</div>'; // fim da div destaque
+    echo '</div>'; 
     echo '<div class="noticias-adicionais">';
     foreach ($noticias as $key => $noticia) {
         if ($key >= 3) { 
             echo '<div class="noticia-item" style="background-image: url(\'' . htmlspecialchars($noticia['imagem'], ENT_QUOTES, 'UTF-8') . '\');">';
-            echo '<h3>' . htmlspecialchars($noticia['titulo'], ENT_QUOTES, 'UTF-8') . '</h3>';
-            echo '<p>' . htmlspecialchars($noticia['cidade'], ENT_QUOTES, 'UTF-8') . '</p>';
+            echo '<a href="">';
+            echo '<h2>' . htmlspecialchars($noticia['titulo'], ENT_QUOTES, 'UTF-8') . '</h2>';
+            echo '</a>';
             echo '</div>';
         }
     }
-    echo '</div>'; // fim da div noticias-adicionais
-
-    echo '</div>'; // fim da div container
+    echo '</div>';
+    echo '</div>';
 } else {
     echo "<p>Não há notícias disponíveis.</p>";
 }
