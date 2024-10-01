@@ -20,9 +20,6 @@
 </head>
 <body>
 <header>
-    <section class="flex" id="info-top">
-        <div id="not-top"></div>
-    </section>
     <section class="flex" id="top-view">
         <div id="logotipo-top"></div>
     </section>

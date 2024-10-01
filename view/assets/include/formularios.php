@@ -13,8 +13,8 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
 <?php if (is_null($tipo)) { ?>
     <div class="button-container">
         <h1 class="flex">Selecione uma opção:</h1>
-        <button onclick="location.href='?tipo=publicidade'">Publicidade</button>
-        <button onclick="location.href='?tipo=noticias'">Notícias</button>
+        <button onclick="location.href='?tipo=publicidade'" class="btn btn-primary">Publicidade</button>
+        <button onclick="location.href='?tipo=noticias'" class="btn btn-primary">Notícias</button>
     </div>
 <?php } else { ?>
     <form action="../../../controller/php/process_form.php" method="post" enctype="multipart/form-data">
@@ -22,9 +22,9 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
             <h1 class="flex">Formulário<br>Cadastro de Publicidade</h1>
             <input type="hidden" name="tipo" value="<?php echo htmlspecialchars($tipo); ?>">
             
-            <label for="tipo">Tipo:</label>
-            <select name="tipo" required>
-                <option value="0">Selecione</option>
+            <label for="tamanho">Tamanho:</label>
+            <select name="tamanho" required>
+                <option value="">Selecione</option>
                 <option value="1">250x250px</option>
                 <option value="2">250x970px</option>
                 <option value="3">970x250px</option>
@@ -51,7 +51,7 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
 
             <label for="categoria">Categoria:</label>
             <select name="categoria" required>
-                <option value="0">Selecione</option>
+                <option value="">Selecione</option>
                 <option value="Política">Política</option>
                 <option value="Economia">Economia</option>
                 <option value="Cultura">Cultura</option>
@@ -67,7 +67,7 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
 
             <label for="cidade">Coluna:</label>
             <select name="cidade" required>
-                <option value="0">Selecione</option>
+                <option value="">Selecione</option>
                 <option value="Belford Roxo">Belford Roxo</option>
                 <option value="Duque de Caxias">Duque de Caxias</option>
                 <option value="Magé">Magé</option>
@@ -75,7 +75,7 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
                 <option value="Nova Iguaçu">Nova Iguaçu</option>
                 <option value="Portal Jardim do Beija-Flor">Portal Jardim do Beija-Flor</option>
                 <option value="Portal Recanto da Alpinas">Portal Recanto da Alpinas</option>
-                <option value="Portal Recando das Peônias">Portal Recando das Peônias</option>
+                <option value="Portal Recanto das Peônias">Portal Recanto das Peônias</option>
                 <option value="Queimados">Queimados</option>
                 <option value="São João de Meriti">São João de Meriti</option>
                 <option value="Xerém" selected>Xerém</option>
@@ -88,8 +88,8 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
             <input type="file" name="imagem" accept="image/*" required>
         <?php } ?>
         
-        <button type="submit"><?php echo ($tipo === "publicidade") ? 'Anunciar' : 'Publicar'; ?></button>
-        <button type="button" onclick="location.href='../include/formularios.php'" class="voltar">Voltar</button>
+        <button type="submit" class="btn btn-success"><?php echo ($tipo === "publicidade") ? 'Anunciar' : 'Publicar'; ?></button>
+        <button type="button" onclick="location.href='../include/formularios.php'" class="btn btn-danger">Voltar</button>
     </form>
     
     <script>

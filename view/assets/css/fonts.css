@@ -93,31 +93,6 @@ footer > p {
     font-size: var(--fonte-padrao);
     padding: 5px;
 }
-.carousel-item h2 {
-    color: var(--branco);
-}
-.noticia-item h2 {
-    color: var(--branco);
-    width: 100%;
-    text-shadow: var(--sombra-texto);
-    font-size: var(--fonte-padrao);
-}
-.destaque-item h2 {
-    color: var(--branco);
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(250, 37, 37,0.5);
-    text-shadow: var(--sombra-texto);
-}
-h1.titulo-categoria {
-    font-size: var(--fonte-padrao);
-    text-transform: uppercase;
-    color: var(--vermelho);
-    max-width: 1080px;
-    margin: auto;
-    padding: 10px;
-    font-weight: bold;
-}
 @media (max-width: 768px) {
     h1.flex {
         font-size: var(--fonte-botao);
