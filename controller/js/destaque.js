@@ -11,28 +11,27 @@ function updateCarousel() {
     items.forEach((item, index) => {
         item.style.display = (index >= currentIndex && index < currentIndex + 6) ? 'block' : 'none';
     });
+    updateActiveBolinha(); // Atualiza a bolinha ativa
 }
 
-// Função para adicionar eventos aos botões após as notícias serem carregadas
+// Função para atualizar a bolinha ativa
+function updateActiveBolinha() {
+    const bolinhas = document.querySelectorAll('.bolinha');
+    bolinhas.forEach((bolinha, index) => {
+        bolinha.classList.toggle('active', index === Math.floor(currentIndex / 6));
+    });
+}
+
+// Função para adicionar eventos às bolinhas após as notícias serem carregadas
 function addEventListeners() {
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
+    const bolinhas = document.querySelectorAll('.bolinha');
 
-    if (prevButton) {
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 6 + items.length) % items.length;
-            if (currentIndex < 0) currentIndex = Math.max(0, items.length - 6);
+    bolinhas.forEach((bolinha, index) => {
+        bolinha.addEventListener('click', () => {
+            currentIndex = index * 6; // Atualiza o índice com base na bolinha clicada
             updateCarousel();
         });
-    }
-
-    if (nextButton) {
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 6) % items.length;
-            if (currentIndex >= items.length) currentIndex = 0;
-            updateCarousel();
-        });
-    }
+    });
 }
 
 // Função para buscar as notícias
@@ -49,7 +48,7 @@ function fetchNoticias() {
             items = document.querySelectorAll('.destaque-item');
             currentIndex = 0;
             updateCarousel();
-            addEventListeners(); // Adiciona os eventos aos botões
+            addEventListeners(); // Adiciona os eventos às bolinhas
         })
         .catch(error => {
             document.getElementById("noticiasDestaque").innerHTML = "<p>Não foi possível carregar as notícias.</p>";

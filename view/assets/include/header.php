@@ -16,11 +16,10 @@
     <meta name="msapplication-TileColor" content="#e40000">
     <meta name="theme-color" content="#e40000">
     <link rel="stylesheet" href="http://localhost/projeto-app/view/assets/css/default.css">
-    <link rel="stylesheet" href="http://localhost/projeto-app/view/assets/css/fonts.css">
 </head>
 <body>
 <header>
     <section class="flex" id="top-view">
-        <div id="logotipo-top"></div>
+        <a href="index.php" id="logotipo-top"><img src="view/assets/img/favicon/composta.png" alt="" srcset=""></a>
     </section>
 </header>

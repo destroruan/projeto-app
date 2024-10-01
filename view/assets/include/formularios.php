@@ -3,7 +3,31 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
 ?>
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>millito, o seu portal de serviços! :)</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost/projeto-app/view/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost/projeto-app/view/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost/projeto-app/view/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="http://localhost/projeto-app/view/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="http://localhost/projeto-app/view/assets/img/favicon/safari-pinned-tab.svg" color="#e40000">
+    <meta name="msapplication-TileColor" content="#e40000">
+    <meta name="theme-color" content="#e40000">
+    <link rel="stylesheet" href="http://localhost/projeto-app/view/assets/css/default.css">
+</head>
+<body>
+<header>
+    <section class="flex" id="top-view">
+        <a href="../../../index.php" id="logotipo-top"><img src="../img/favicon/composta.png" alt="" srcset=""></a>
+    </section>
+</header>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -52,11 +76,34 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
             <label for="categoria">Categoria:</label>
             <select name="categoria" required>
                 <option value="">Selecione</option>
-                <option value="Política">Política</option>
                 <option value="Economia">Economia</option>
-                <option value="Cultura">Cultura</option>
-                <option value="Esportes">Esportes</option>
+                <option value="Educação">Educação</option>
+                <option value="Empreendedorismo">Empreendedorismo</option>
+                <option value="Entretenimento">Entretenimento</option>
+                <option value="Eventos">Eventos</option>
+                <option value="Filosofia">Filosofia</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Gastronomia">Gastronomia</option>
+                <option value="Gaming">Gaming</option>
+                <option value="História">História</option>
+                <option value="Jornalismo">Jornalismo</option>
+                <option value="Literatura">Literatura</option>
+                <option value="Meio Ambiente">Meio Ambiente</option>
+                <option value="Moda">Moda</option>
+                <option value="Música">Música</option>
+                <option value="Política">Política</option>
+                <option value="Religião">Religião</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Ciência">Ciência</option>
+                <option value="Estilo de Vida">Estilo de Vida</option>
                 <option value="Tecnologia">Tecnologia</option>
+                <option value="Tecnologia Verde">Tecnologia Verde</option>
+                <option value="Televisão">Televisão</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Turismo">Turismo</option>
+                <option value="Voluntariado">Voluntariado</option>
+                <option value="Desenvolvimento Pessoal">Desenvolvimento Pessoal</option>
+                <option value="Crimes">Crimes</option>
             </select>
 
             <label for="destaque">Destaque:</label>

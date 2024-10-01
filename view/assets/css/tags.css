@@ -1,0 +1,33 @@
+@charset "UTF-8";
+:root {
+    --tag-Crimes: rgb(139, 0, 0); /* Vermelho Escuro */
+    --tag-Ciência: rgb(0, 204, 204); /* Ciano */
+    --tag-Cultura: rgb(150, 75, 0); /* Marrom */
+    --tag-DesenvolvimentoPessoal: rgb(255, 105, 180); /* Rosa Claro */
+    --tag-Economia: rgb(0, 138, 0); /* Verde Escuro */
+    --tag-Educação: rgb(0, 51, 204); /* Azul Escuro */
+    --tag-Esportes: rgb(255, 136, 0);
+    --tag-Empreendedorismo: rgb(255, 165, 0); /* Laranja */
+    --tag-Entretenimento: rgb(255, 0, 255); /* Magenta */
+    --tag-Eventos: rgb(64, 224, 208); /* Turquesa */
+    --tag-Filosofia: rgb(0, 100, 0); /* Verde Floresta */
+    --tag-Financeiro: rgb(0, 128, 0); /* Verde */
+    --tag-Gastronomia: rgb(128, 0, 0); /* Vermelho Escuro */
+    --tag-Gaming: rgb(75, 0, 130); /* Índigo */
+    --tag-História: rgb(255, 165, 0); /* Laranja Escuro */
+    --tag-Jornalismo: rgb(0, 0, 255); /* Azul */
+    --tag-Literatura: rgb(153, 50, 204); /* Roxo */
+    --tag-MeioAmbiente: rgb(0, 128, 128); /* Verde Água */
+    --tag-Moda: rgb(255, 192, 203); /* Rosa */
+    --tag-Música: rgb(128, 0, 128); /* Roxo */
+    --tag-Política: rgb(200, 0, 0); /* Vermelho */
+    --tag-Religião: rgb(255, 215, 0); /* Dourado */
+    --tag-Saúde: rgb(0, 153, 51); /* Verde Médio */
+    --tag-EstilodeVida: rgb(240, 230, 140); /* Amarelo Claro */
+    --tag-Tecnologia: rgb(0, 102, 204); /* Azul */
+    --tag-TecnologiaVerde: rgb(34, 139, 34); /* Verde Floresta */
+    --tag-Televisão: rgb(255, 105, 180); /* Rosa */
+    --tag-Transporte: rgb(0, 51, 102); /* Azul Marinho */
+    --tag-Turismo: rgb(0, 204, 0); /* Verde Vibrante */
+    --tag-Voluntariado: rgb(255, 215, 0); /* Dourado */
+}

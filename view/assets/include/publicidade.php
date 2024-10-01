@@ -10,7 +10,6 @@ if (isset($tipo) && $tipo == "global") { ?>
             $noticias = $stmt->fetchAll(PDO::FETCH_ASSOC);
             
             if (!empty($noticias)) {
-                echo '<div class="publicidade"><h1 class="titulo-publi">PUBLICIDADE - ANUNCIE AQUI (24) 98822-1959</h1>';
                 echo '<div id="noticiasCarousel" class="carousel slide" data-ride="carousel">';
                 echo '<div class="carousel-inner">';
                 foreach ($noticias as $index => $noticia) {
@@ -19,7 +18,6 @@ if (isset($tipo) && $tipo == "global") { ?>
                     echo '<a href="' . htmlspecialchars($noticia["link"]) . '" target="_blank"><img src="' . htmlspecialchars($noticia['imagem']) . '" class="d-block w-100" alt="Publicidade relacionada ao produto ou serviço"></a>';
                     echo '</div>';
                 }
-                echo '</div>';
                 echo '</div>';
                 echo '</div>';
             } else {
