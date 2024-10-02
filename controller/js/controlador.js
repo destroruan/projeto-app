@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetchNoticias();
     fetchPublicidade();
     fetchCategorias();
+    fetchCidades();
 });
 let currentIndex = 0;
 let items = [];
@@ -81,6 +82,31 @@ function fetchCategorias() {
         console.log('Buscando categoria:', categoriaValue);
         
         fetch(`controller/php/controlador.php?acao=categoria&parametro=${encodeURIComponent(categoriaValue)}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar notícias: ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log('Dados recebidos:', data); // Para verificar o que está sendo retornado
+                element.innerHTML = data; // Atualiza o conteúdo do elemento atual
+            })
+            .catch(error => {
+                element.innerHTML = "<p>Não foi possível carregar as notícias.</p>";
+                console.error(error);
+            });
+    });
+}
+// Função para buscar as cidades
+function fetchCidades() {
+    const cidadeElements = document.querySelectorAll(".cidade-noticias");
+    
+    cidadeElements.forEach((element) => {
+        const cidadeValue = element.textContent.trim();
+        console.log('Buscando cidade:', cidadeValue);
+        
+        fetch(`controller/php/controlador.php?acao=cidade&parametro=${encodeURIComponent(cidadeValue)}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Erro ao buscar notícias: ' + response.statusText);

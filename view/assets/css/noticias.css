@@ -56,6 +56,9 @@
 .bolinha:hover {
     background-color: var(--cor-link-hover); 
 }
+.lado {
+    display: inline-block;
+}
 span.bar-categoria {
     height: 1px;
     min-width: 50%;

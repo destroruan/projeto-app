@@ -17,7 +17,7 @@ a {
     text-decoration: none;
     color: var(--cor-preto);
 }
-#cabecalho > menu > a {
+#cabecalho div#grupo-millito > a {
     text-align: left;
     font-size: var(--fonte-botao);
     text-decoration: none;
@@ -25,8 +25,20 @@ a {
     padding: 5px 10px;
     margin-bottom: 5px;
 }
-#cabecalho > menu > a:hover {
+#cabecalho div#grupo-millito > a:hover {
     border-bottom: 2px solid;
+}
+#cabecalho div#user > a {
+    text-decoration: none;
+    text-align: left;
+    font-size: var(--fonte-padrao);
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    color: var(--cor-clara);
+}
+#cabecalho div#user > a:hover {
+    color: var(--cor-logo);   
 }
 .titulo-publi {
     text-align: center;
@@ -131,5 +143,16 @@ h1.titulo-categoria {
     }
     div.categorias {
         max-width: 1080px;
+    }
+    #cabecalho a {
+        font-size: var(--fonte-apoio) !important;
+    }
+    #top-view a,
+    #top-view i,
+    #top-view input {
+        font-size: var(--fonte-apoio) !important;    
+    }
+    #top-view input {
+        padding: 2px;    
     }
 }

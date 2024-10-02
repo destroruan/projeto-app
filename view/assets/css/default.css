@@ -9,15 +9,15 @@
     padding: 0px;
 }
 :root {
-    --cor-logo: #fa2525; 
-    --cor-principal: #d82c2c;
-    --cor-secundaria: #b72a2a;
+    --cor-logo: #E30613; 
+    --cor-principal: #b72a2a;
+    --cor-secundaria: #F2505D;
     --cor-clara: rgba(250, 37, 37, 0.5);
-    --cor-fundo: #f4f4f4;
+    --cor-fundo: #F2F2F2;
     --cor-texto: #212529;
     --cor-cinza-claro: #cccccc;
     --cor-cinza-escuro: #444444;
-    --cor-preto: #000000;
+    --cor-preto: #0D0D0D;
     --cor-sombra: rgba(0, 0, 0, 0.1);
     --cor-link-hover: #c41f1f;
     --branco: #ffffff;
@@ -31,26 +31,24 @@ body, html {
     font-style: normal;
     background-color: var(--cor-fundo);
 }
-#logotipo-top {
-    display: inline-block;  
+footer {
+    display: block;
+    box-shadow: var(--cor-sombra);
+    text-align: center;
+    color: var(--cor-preto);
 }
-
+#logotipo-top {
+    display: inline-block; 
+}
 #logotipo-top img {
-    width: 92px;
-    height: 28px;
-    margin: 10px;
+    width: 56px;
+    height: 56px;
 }
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-footer {
-    display: block;
-    box-shadow: var(--cor-sombra);
-    text-align: center;
-    color: var(--cor-preto);
 }
 #cabecalho {
     background-color: var(--branco);
@@ -59,7 +57,70 @@ footer {
 #cabecalho > menu {
     max-width: 1080px;
     margin: auto;
+    padding-top: 5px;
+}
+#cabecalho div {
+    display: inline-block;
+    margin-left: 10%;
+}
+#top-view {
+    background-color: var(--cor-logo);
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#buscar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px;
+    width: 300px;
+    transition: border-color 0.3s;
+    border: 1px solid var(--cor-cinza-claro);
+    background-color: var(--branco);
+    margin-left: 5%;
+}
+#icon-buscar {
+    font-size: var(--fonte-padrao);
+    color: var(--cor-cinza-escuro);
+    padding: 5px;
+}
+#ibuscar {
+    margin-bottom: 0px;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+#ibuscar::placeholder {
+    color: var(--cor-cinza-claro);
+}
+#ibuscar:focus {
+    border: none;
+    outline: none;
+}
+#hamburguer {
+    color: var(--branco);
+    font-size: 36px;
+    margin-right: 5%;
 }
 @media (max-width: 768px) {
-
+    #cabecalho menu {
+        text-align: center;
+        max-width: 700px;
+    }
+    #cabecalho div {
+        margin-left: 0px;
+    }
+    #logotipo-top img {
+        max-width: 24px;
+        max-height: 24px;
+        margin: 5px;
+    }
+    #hamburguer {
+        margin-right: 2%;
+    }
+    #buscar {
+        margin-left: 2%;
+    }
 }
