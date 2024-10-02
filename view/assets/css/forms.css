@@ -15,12 +15,33 @@ form {
     max-width: 970px;
     margin: 20px auto;
 }
+.btn.btn-success{
+    background-color: var(--cor-logo);
+    border: none;
+    font-weight: bold;    
+}
+.btn.btn-success:hover{
+    background-color: var(--cor-clara);
+    color: var(--cor-texto);    
+}
 .btn.btn-danger {
     float: right;
+    background-color: var(--cor-texto);
+    border: none;
+    font-weight: bold; 
+}
+.btn.btn-danger:hover {
+    background-color: var(--cor-cinza-claro);
+    color: var(--cor-cinza-escuro);   
 }
 .btn.btn-primary {
     background-color: var(--cor-logo);
     border: none;
+    font-weight: bold;
+}
+.btn.btn-primary:hover {
+    background-color: var(--cor-clara);
+    color: var(--cor-texto);
 }
 @media (max-width: 768px) {
     form {

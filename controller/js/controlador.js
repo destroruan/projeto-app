@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     fetchNoticias();
+    fetchPublicidade();
 });
 
 let currentIndex = 0;
@@ -36,7 +37,7 @@ function addEventListeners() {
 
 // Função para buscar as notícias
 function fetchNoticias() {
-    fetch('view/assets/include/destaque.php')
+    fetch('controller/php/controlador.php?acao=destaque')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao buscar notícias: ' + response.statusText);
@@ -53,4 +54,25 @@ function fetchNoticias() {
         .catch(error => {
             document.getElementById("noticiasDestaque").innerHTML = "<p>Não foi possível carregar as notícias.</p>";
         });
+}
+// Função para buscar as publicidades
+function fetchPublicidade() {
+    fetch('controller/php/controlador.php?acao=publicidade-centro')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erro ao buscar notícias: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById("publicidade-centro").innerHTML = data;
+    })
+    .catch(error => {
+        document.getElementById("publicidade-centro").innerHTML = "<p>Não foi possível carregar as notícias.</p>";
+    });
+    $(document).ready(function(){
+        $('#noticiasCarousel').carousel({
+            interval: (1000)*(15)
+        });
+    });
 }
