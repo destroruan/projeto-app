@@ -83,26 +83,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         
             if (!empty($noticias)) {
                 ?>
-                <div class="container">
+                <div class="container-tematicas">
                     <div class="flex">
-                    <h1 class="titulo-categoria" style="color: var(--tag-<?php echo htmlspecialchars($noticias[0]['categoria'], ENT_QUOTES, 'UTF-8'); ?>);">
-                        <?php echo htmlspecialchars($noticias[0]['categoria'], ENT_QUOTES, 'UTF-8'); ?>
-                    </h1>
-                    <span class="bar-categoria"></span>
+                        <h1 class="titulo-categoria" style="color: var(--tag-<?php echo htmlspecialchars($noticias[0]['categoria'], ENT_QUOTES, 'UTF-8'); ?>);">
+                            <?php echo htmlspecialchars($noticias[0]['categoria'], ENT_QUOTES, 'UTF-8'); ?>
+                        </h1>
+                        <span class="bar-categoria"></span>
                     </div>
-                    <div class="destaque">
-                        <div id="noticiasDestaque" class="destaques">
-                            <?php
+                    <div class="categoria">
+                        <?php
                             foreach ($noticias as $noticia) {
-                                echo '<div class="destaque-item" style="background-image: url(\'' . htmlspecialchars($noticia['imagem'], ENT_QUOTES, 'UTF-8') . '\');">';
+                                echo '<div class="categoria-item" style="background-image: url(\'' . htmlspecialchars($noticia['imagem'], ENT_QUOTES, 'UTF-8') . '\');">';
                                 echo '<a href="">';
                                 echo '<span class="categoria" style="background: var(--tag-' . htmlspecialchars($noticia['categoria'], ENT_QUOTES, 'UTF-8') . ');">' . htmlspecialchars($noticia['categoria'], ENT_QUOTES, 'UTF-8') . '</span>';
                                 echo '<h2>' . htmlspecialchars($noticia['titulo'], ENT_QUOTES, 'UTF-8') . '</h2>';
                                 echo '</a>';
                                 echo '</div>';
                             }
-                            ?>
-                        </div>
+                        ?>
                     </div>
                 </div>
                 <?php
