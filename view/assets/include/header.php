@@ -19,6 +19,15 @@
 </head>
 <body>
 <header>
+    <section id="cabecalho">
+        <menu>
+            <a href="" style="color: #25D366;">WhatsApp</a>
+            <a href="" style="color: #C13584;">Instagram</a>
+            <a href="" style="color: #1877F2;">Facebook</a>
+            <a href="" style="color: #FF0000;">Youtube</a>
+            <a href="" style="color: #0088CC;">Telegram</a>
+        </menu>
+    </section>
     <section class="flex" id="top-view">
         <a href="index.php" id="logotipo-top"><img src="view/assets/img/favicon/composta.png" alt="" srcset=""></a>
     </section>

@@ -4,7 +4,6 @@
     margin: auto;
     padding: 20px;
 }
-
 .titulo-categoria {
     text-align: center;
     margin-bottom: 20px;
@@ -17,8 +16,12 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.destaque-item a{
+    text-decoration: none;
+    color: var(--branco);    
+}
 .destaque-item {
-    max-width: 30%;
+    width: 33%;
     border-radius: 8px;
     color: var(--branco);
     text-align: justify;
@@ -58,4 +61,9 @@ span.bar-categoria {
     min-width: 50%;
     background-color: var(--cor-cinza-claro);
     margin-bottom: 18px;
+}
+@media (max-width: 768px) {
+    .destaque-item {
+        width: 80%;
+    }
 }

@@ -27,6 +27,8 @@
 body, html {
     width: 100vw;
     height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
     background-color: var(--cor-fundo);
 }
 #logotipo-top {
@@ -50,6 +52,14 @@ footer {
     text-align: center;
     color: var(--cor-preto);
 }
+#cabecalho {
+    background-color: var(--branco);
+    height: 30px;
+}
+#cabecalho > menu {
+    max-width: 1080px;
+    margin: auto;
+}
 @media (max-width: 768px) {
-    
+
 }

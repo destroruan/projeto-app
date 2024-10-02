@@ -88,21 +88,21 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
                 <option value="História">História</option>
                 <option value="Jornalismo">Jornalismo</option>
                 <option value="Literatura">Literatura</option>
-                <option value="Meio Ambiente">Meio Ambiente</option>
+                <option value="MeioAmbiente">Meio Ambiente</option>
                 <option value="Moda">Moda</option>
                 <option value="Música">Música</option>
                 <option value="Política">Política</option>
                 <option value="Religião">Religião</option>
                 <option value="Saúde">Saúde</option>
                 <option value="Ciência">Ciência</option>
-                <option value="Estilo de Vida">Estilo de Vida</option>
+                <option value="EstilodeVida">Estilo de Vida</option>
                 <option value="Tecnologia">Tecnologia</option>
-                <option value="Tecnologia Verde">Tecnologia Verde</option>
+                <option value="TecnologiaVerde">Tecnologia Verde</option>
                 <option value="Televisão">Televisão</option>
                 <option value="Transporte">Transporte</option>
                 <option value="Turismo">Turismo</option>
                 <option value="Voluntariado">Voluntariado</option>
-                <option value="Desenvolvimento Pessoal">Desenvolvimento Pessoal</option>
+                <option value="DesenvolvimentoPessoal">Desenvolvimento Pessoal</option>
                 <option value="Crimes">Crimes</option>
             </select>
 
