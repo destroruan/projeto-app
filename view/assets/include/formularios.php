@@ -54,8 +54,8 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
                 <option value="3">970x250px</option>
             </select>
 
-            <label for="arq">Upload:</label>
-            <input type="file" name="arq" required>
+            <label for="imagem">Imagem:</label>
+            <input type="file" name="imagem" accept="image/*" required>
 
             <label for="link">Link:</label>
             <input type="url" name="link" required>

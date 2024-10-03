@@ -1,12 +1,16 @@
 @charset "UTF-8";
 .container {
-    max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
 }
 .titulo-categoria {
     text-align: center;
     margin-bottom: 20px;
+}
+.center {
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--fonte-padrao);
 }
 .destaque {
     position: relative;
@@ -15,19 +19,21 @@ div.categoria {
     display: flex;
     width: 100%;
 }
-.destaques {
+.destaques,
+.cidades {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
 .destaque-item a,
+.cidades-item a,
 .categoria-item a{
     text-decoration: none;
     color: var(--branco);    
 }
 .destaque-item {
-    width: 33%;
+    width: 45%;
     border-radius: 8px;
     color: var(--branco);
     text-align: justify;
@@ -36,8 +42,8 @@ div.categoria {
     background-size: cover;
     background-position: center;
     border: 1px solid var(--cor-cinza-claro);
-    box-shadow: var(--sombra-texto);
 }
+.cidades-item,
 .categoria-item {
     width: 50%;
     border-radius: 8px;
@@ -48,12 +54,10 @@ div.categoria {
     background-size: cover;
     background-position: center;
     border: 1px solid var(--cor-cinza-claro);
-    box-shadow: var(--sombra-texto);
     display: inline-block;
 }
-.destaque-item:hover {
-    transform: scale(1.05);
-}
+.cidades-item:hover,
+.destaque-item:hover,
 .categoria-item:hover {
     transform: scale(1.05);
 }
@@ -70,7 +74,6 @@ div.categoria {
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 1px solid var(--cor-preto);
 }
 .bolinha.active {
     background-color: var(--cor-principal); 
@@ -78,7 +81,11 @@ div.categoria {
 .bolinha:hover {
     background-color: var(--cor-link-hover); 
 }
-#categorias{
+#categorias {
+    max-width: 1080px;
+    margin: auto;
+}
+#cidades {
     max-width: 1080px;
     margin: auto;
 }
@@ -88,8 +95,33 @@ span.bar-categoria {
     background-color: var(--cor-cinza-claro);
     margin-bottom: 18px;
 }
+div.bar-divisor {
+    height: 1px;
+    max-width: 1080px;
+    background-color: var(--cor-logo);
+    margin: auto;
+    margin-bottom: 18px;
+}
 @media (max-width: 768px) {
     .destaque-item {
         width: 80%;
+    }
+    #categorias,
+    #cidades {
+        max-width: 560px;
+    }
+    div.categoria {
+        display: block;
+        width: 100%;
+    }
+    .cidade-noticias{
+        display: block;
+        width: 100%;
+    }
+    .destaque-item ,
+    .cidades-item ,
+    .categoria-item {
+        display: block;
+        width: 90%;    
     }
 }

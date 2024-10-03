@@ -10,7 +10,7 @@ let items = [];
 function updateCarousel() {
     const totalItems = items.length;
     items.forEach((item, index) => {
-        item.style.display = (index >= currentIndex && index < currentIndex + 6) ? 'block' : 'none';
+        item.style.display = (index >= currentIndex && index < currentIndex + 4) ? 'block' : 'none';
     });
     updateActiveBolinha(); // Atualiza a bolinha ativa
 }
@@ -18,7 +18,7 @@ function updateCarousel() {
 function updateActiveBolinha() {
     const bolinhas = document.querySelectorAll('.bolinha');
     bolinhas.forEach((bolinha, index) => {
-        bolinha.classList.toggle('active', index === Math.floor(currentIndex / 6));
+        bolinha.classList.toggle('active', index === Math.floor(currentIndex / 4));
     });
 }
 // Função para adicionar eventos às bolinhas após as notícias serem carregadas
@@ -27,7 +27,7 @@ function addEventListeners() {
 
     bolinhas.forEach((bolinha, index) => {
         bolinha.addEventListener('click', () => {
-            currentIndex = index * 6; // Atualiza o índice com base na bolinha clicada
+            currentIndex = index * 4; // Atualiza o índice com base na bolinha clicada
             updateCarousel();
         });
     });
@@ -42,11 +42,22 @@ function fetchPublicidade() {
         return response.text();
     })
     .then(data => {
-        document.getElementById("publicidade-centro").innerHTML = data;
+        // Seleciona todos os elementos com a classe "publicidade-centro"
+        let publicidades = document.getElementsByClassName("publicidade-centro");
+        // Aplica o conteúdo para todos os elementos com essa classe
+        for (let i = 0; i < publicidades.length; i++) {
+            publicidades[i].innerHTML = data;
+        }
     })
     .catch(error => {
-        document.getElementById("publicidade-centro").innerHTML = "<p>Não foi possível carregar as notícias.</p>";
+        let publicidades = document.getElementsByClassName("publicidade-centro");
+        // Aplica a mensagem de erro para todos os elementos com essa classe
+        for (let i = 0; i < publicidades.length; i++) {
+            publicidades[i].innerHTML = "<p>Não foi possível carregar as notícias.</p>";
+        }
     });
+
+    // Inicializa o carrossel quando o documento estiver pronto
     $(document).ready(function(){
         $('#noticiasCarousel').carousel({
             interval: (1000)*(15)

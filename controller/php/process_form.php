@@ -6,10 +6,8 @@ $message = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     var_dump($_POST);
-    
     $tipo = filter_input(INPUT_POST, 'tipo', FILTER_SANITIZE_STRING);
     $pdo = getConnection();
-
     function uploadFile($file, $target_dir) {
         if (!is_dir($target_dir)) {
             mkdir($target_dir, 0755, true);
@@ -37,7 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             return ["success" => false, "message" => "Desculpe, houve um erro ao enviar seu arquivo."];
         }
     }
-
     if ($tipo === "publicidade") {
         $sql = "CREATE TABLE IF NOT EXISTS publicidades (
             id INT AUTO_INCREMENT PRIMARY KEY,
@@ -55,18 +52,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             die('Formato de data inválido. Use o formato YYYY-MM-DD.');
         }
 
-        if (!isset($_FILES['arq']) || $_FILES['arq']['error'] !== UPLOAD_ERR_OK) {
-            die('Erro no upload: ' . $_FILES['arq']['error']);
+        if (!isset($_FILES['imagem']) || $_FILES['imagem']['error'] !== UPLOAD_ERR_OK) {
+            die('Erro no upload: ' . $_FILES['imagem']['error']);
         }
 
         $tamanho = filter_input(INPUT_POST, 'tamanho', FILTER_SANITIZE_NUMBER_INT);
-        $uploadResult = uploadFile($_FILES["arq"], "../../view/assets/img/uploads/$tamanho/");
+        $uploadResult = uploadFile($_FILES["imagem"], "../../view/assets/img/uploads/$tamanho/");
         if (!$uploadResult["success"]) {
             die($uploadResult["message"]);
         }
 
         $stmt = $pdo->prepare("INSERT INTO publicidades (tamanho, imagem, link, prazo_expiracao) VALUES (?, ?, ?, ?)");
-        $stmt->execute([$tamanho, "view/assets/img/uploads/$tamanho/" . basename($_FILES["arq"]["name"]), $link, $prazo_expiracao]);
+        $stmt->execute([$tamanho, "view/assets/img/uploads/$tamanho/" . basename($_FILES["imagem"]["name"]), $link, $prazo_expiracao]);
 
         if ($stmt->errorCode() != '00000') {
             $message = "Erro ao inserir no banco de dados: " . implode(", ", $stmt->errorInfo());
@@ -74,7 +71,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $message = "Publicidade registrada com sucesso!";
         }
     } else {
-
         $required_fields = ['titulo', 'subtitulo', 'categoria', 'destaque', 'conteudo', 'cidade'];
         foreach ($required_fields as $field) {
             if (empty($_POST[$field])) {

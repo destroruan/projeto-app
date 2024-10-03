@@ -127,7 +127,9 @@ h1.titulo-categoria {
     font-weight: bold;
     border-radius: 5px;
 }
-.destaque-item a h2 {
+.destaque-item a h2,
+.categoria-item a h2,
+.cidades-item a h2 {
     margin-top: 90px;
     font-size: var(--fonte-padrao);
     font-weight: bold;
