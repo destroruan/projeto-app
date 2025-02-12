@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+a {
+    text-decoration: none;
+    color: black;
+}
+header > div {
+    display: inline-block;
+}
+li {
+    display: inline-block;
+}
+li > a#logomarca {
+    color: var(--cor-primaria);
+    font-size: 18px;
+}
