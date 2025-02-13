@@ -4,13 +4,52 @@ a {
     text-decoration: none;
     color: black;
 }
-header > div {
+header > nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+}
+a#logomarca {
+    color: var(--cinza-claro);
+    font-size: 20px;
+}
+ul {
     display: inline-block;
 }
-li {
+#botoes-menu > li {
     display: inline-block;
 }
-li > a#logomarca {
-    color: var(--cor-primaria);
-    font-size: 18px;
+#botoes-menu > li > button {
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--cor-secundaria);
+    color: var(--cinza-claro);
+    font-weight: bold;
+    padding: 5px;
+}
+#botoes-menu > li#false > button {
+    background-color: var(--cinza-claro);
+    color: var(--cor-secundaria);
+}
+#botoes-menu > li#false > button:hover {
+    background-color: rgb(49, 49, 49);
+    color: var(--cinza-claro);
+}
+#botoes-menu > li > button:hover {
+    background-color: var(--cinza-claro);
+    color: var(--cor-secundaria);
+}
+#botoes-menu > li > i {
+    display: block;
+    font-size: 14px;
+    color: var(--cinza-claro);
+    cursor: pointer;
+    padding: 10px;
+}
+#botoes-menu > li > i:hover {
+    background-color: rgb(49, 49, 49);
+    border-radius: 50px;
 }

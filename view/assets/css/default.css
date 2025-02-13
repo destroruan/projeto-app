@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(../include/fontawesome/css/all.css);
 @import url(fonte.css);
 * {
     margin: 0px;
@@ -22,14 +23,19 @@ body, html {
     background-color: var(--cinza-claro);
 }
 header {
-    height: 50px;
+    height: 65px;
     background-color: var(--cor-secundaria);
 }
 header > nav {
     max-width: 1080px;
-    padding: 10px;
+    height: 65px;
     margin: auto;
 }
 @media (max-width: 768px) {
-
+    #menu-desktop {
+        display: none;
+    }
+    ul#margin {
+        width: 40%;
+    }
 }
