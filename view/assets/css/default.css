@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(../include/fontawesome/css/all.css);
 @import url(fonte.css);
+@import url(maps.css);
 * {
     margin: 0px;
     padding: 0px;

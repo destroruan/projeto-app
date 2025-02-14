@@ -1,0 +1,45 @@
+@charset "UTF-8";
+#map {
+    display: none;
+}
+@media only screen and (max-width: 1080px) and (pointer: coarse) {
+    #map { 
+        display: block;
+        width: 50%; 
+        height: 50vh;
+        border-radius: 20px; 
+        border: 1px solid var(--cor-primaria);
+    }
+    #controls { 
+        position: absolute;
+        order: initial;
+        top: 89%;
+        left: 20px;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo suave */
+        padding: 10px; 
+        display: flex; 
+        gap: 10px; 
+    }
+    input, button { 
+        padding: 5px; 
+        border: 0px;
+        cursor: pointer;
+    }
+    .route-info {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo suave */
+        padding: 10px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+        z-index: 1; /* Para garantir que apareça acima do mapa */
+    }
+    .route-info p {
+        margin: 5px 0;
+        font-weight: bold;
+    }
+}

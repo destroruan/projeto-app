@@ -1,0 +1,324 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3047, -22.5882]
+            },
+            "properties": {
+                "title": "Praça da Mantiquira",
+                "description": "Local de espera"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2969, -22.5973]
+            },
+            "properties": {
+                "title": "Ponto de Ônibus, Ciferal",
+                "description": "Local de espera"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2859, -22.5848] 
+            },
+            "properties": {
+                "title": "Portal Jardim do Beija-Flor",
+                "description": "Condomínio BRZ"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2861, -22.5856] 
+            },
+            "properties": {
+                "title": "Portal Recanto das Alpinas",
+                "description": "Condomínio BRZ"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2860, -22.5852] 
+            },
+            "properties": {
+                "title": "Portal Recanto das Peônias",
+                "description": "Condomínio BRZ"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3016, -22.5843] 
+            },
+            "properties": {
+                "title": "Projeto Recomeçar - Pr. Claudio Duarte",
+                "description": "Igreja Protestante"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2986, -22.5968] 
+            },
+            "properties": {
+                "title": "Colégio Estadual Barão de Mauá (CEBM)",
+                "description": "Colégio Estadual"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3034, -22.5900] 
+            },
+            "properties": {
+                "title": "Nosso Cantinho - Heroes",
+                "description": "Restaurante"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3043, -22.5885] 
+            },
+            "properties": {
+                "title": "La Pietra Restaurante e Pizzaria",
+                "description": "Restaurante"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2959, -22.5979] 
+            },
+            "properties": {
+                "title": "Rotatória - Aviário",
+                "description": "Local de espera"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2926, -22.6012] 
+            },
+            "properties": {
+                "title": "Unidade Pre Hospitalar Xerém",
+                "description": "Hospital"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2930, -22.6015] 
+            },
+            "properties": {
+                "title": "4ª CIA 15° BPM",
+                "description": "Delegacia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3024, -22.5911] 
+            },
+            "properties": {
+                "title": "Supermercado RIO SUL",
+                "description": "Supermercado"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3055, -22.5874] 
+            },
+            "properties": {
+                "title": "Supermercado RIO SUL - Praça da Mantiquira",
+                "description": "Supermercado"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2876, -22.6062] 
+            },
+            "properties": {
+                "title": "Ponto de Ônibus, Entrada de Xerém",
+                "description": "Local de espera"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2971, -22.5988] 
+            },
+            "properties": {
+                "title": "Supermercado Rede Economia - Santa Alice",
+                "description": "Supermercado"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3050, -22.5872] 
+            },
+            "properties": {
+                "title": "Supermercado Rede Economia - Praça da Mantiquira",
+                "description": "Supermercado"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3020, -22.5999] 
+            },
+            "properties": {
+                "title": "Colegio Estadual Santo Antonio - C.e.s.a",
+                "description": "Colégio Estadual"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3142, -22.5668] 
+            },
+            "properties": {
+                "title": "Centro de Convenções John Wesley",
+                "description": "Igreja Protestante"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3020, -22.5877] 
+            },
+            "properties": {
+                "title": "Igreja Metodista em Mantiquira",
+                "description": "Igreja Protestante"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3692, -22.6713] 
+            },
+            "properties": {
+                "title": "Sítio Lagoa Azul - Amapá",
+                "description": "Área de Lazer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3561, -22.6693] 
+            },
+            "properties": {
+                "title": "Sítio H²O - Amapá",
+                "description": "Área de Lazer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3119, -22.6146] 
+            },
+            "properties": {
+                "title": "Sitio Conquista Xerém",
+                "description": "Área de Lazer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3094, -22.5996] 
+            },
+            "properties": {
+                "title": "Arena Esporte Xerém - Santa Alice",
+                "description": "Arena de Esportes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3036, -22.6024] 
+            },
+            "properties": {
+                "title": "CRAESM - Santa Alice",
+                "description": "CRAESM - Centro de Referência e Atenção Especializada à Saúde da Mulher"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2833, -22.6420] 
+            },
+            "properties": {
+                "title": "Supermarket - Santa Cruz da Serra",
+                "description": "Supermercado"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.2777, -22.6414] 
+            },
+            "properties": {
+                "title": "Dom Atacadista - Santa Cruz da Serra",
+                "description": "Supermercado"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.3128, -22.5706] 
+            },
+            "properties": {
+                "title": "Praça de Xerém - Zeca Pagodinho",
+                "description": "Local de espera"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [] 
+            },
+            "properties": {
+                "title": "",
+                "description": ""
+            }
+        }
+    ]
+}
