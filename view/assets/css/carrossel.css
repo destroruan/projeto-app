@@ -1,15 +1,17 @@
 @charset "UTF-8";
-.carousel-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    margin: auto;
-}
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-.carousel img {
-    width: 100%;
-    transition: opacity 0.5s ease-in-out;
+@media (max-width: 768px) { /* and (pointer: coarse) */
+    body#mobile .carousel-container {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+    body#mobile .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+    body#mobile .carousel img {
+        width: 100%;
+        transition: opacity 0.5s ease-in-out;
+    }    
 }

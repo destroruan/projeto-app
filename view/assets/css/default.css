@@ -15,7 +15,7 @@
     --cinza-medio: #757575;
 }  
 @media (max-width: 768px) { /* and (pointer: coarse) */
-    body, html {
+    body#mobile {
         width: 100vw;
         height: 100vh;
         font-family: "Sora", serif;
@@ -24,21 +24,31 @@
         font-style: normal;
         overflow-x: hidden;
     }
-    header {
-        height: 65px;
+    body#mobile header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
         background-color: var(--cor-secundaria);
     }
-    header > nav {
-        max-width: 90%;
-        height: 65px;
-        margin: auto;
+    body#mobile header > nav {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    section {
-        max-width: 90%;
-        margin: auto;
-        margin-top: 10px;
-    }
-    ul#margin {
+    body#mobile ul#margin {
         width: 20%;
+    }
+    body#mobile section {
+        margin: auto;
+    }
+    body#mobile section#Sobre {
+        width: 90%;
+    }
+    body#mobile footer {
+        width: 90%;
+        height: 50px;
+        background-color: #757575;
     }
 }

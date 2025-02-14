@@ -1,87 +1,70 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-body, html {
-    font-size: 10px;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-button {
-    font-size: 10px;   
-}
-header > nav > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 15px;
-}
-a#logomarca {
-    color: var(--cinza-claro);
-    font-size: 20px;
-}
-ul {
-    display: inline-block;
-}
-#botoes-menu > li {
-    display: inline-block;
-}
-#botoes-menu > li > button {
-    cursor: pointer;
-    border: none;
-    border-radius: 50px;
-    background-color: var(--cor-secundaria);
-    color: var(--cinza-claro);
-    font-weight: bold;
-    padding: 10px;
-}
-#botoes-menu > li#false > button {
-    background-color: var(--cinza-claro);
-    color: var(--cor-secundaria);
-}
-#botoes-menu > li#false > button:hover {
-    background-color: rgb(49, 49, 49);
-    color: var(--cinza-claro);
-}
-#botoes-menu > li > button:hover {
-    background-color: var(--cinza-claro);
-    color: var(--cor-secundaria);
-}
-#botoes-menu > li > i {
-    display: block;
-    color: var(--cinza-claro);
-    cursor: pointer;
-    padding: 10px;
-}
-#botoes-menu > li > i:hover {
-    background-color: rgb(49, 49, 49);
-    border-radius: 50px;
-}
-section > h1 {
-    color: var(--cor-primaria);
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: normal;
-}
-div.border {
-    width: 100%;
-    height: 1px;
-    background: var(--cor-primaria);
-}
-div.border > div.em {
-    width: 20%;
-    height: 2px;
-    background: var(--cor-secundaria);
-}
-section > p {
-    color: var(--cor-secundaria);
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: normal;
-    text-indent: 20px;
-    text-align: justify;
-}
-@media only screen and (max-width: 1080px) and (pointer: coarse){ /*  */
-
+@media only screen and (max-width: 1080px) { /* and (pointer: coarse) */
+    body, html {
+        font-size: 16px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    button {
+        font-size: 12px; 
+        font-weight: bold;
+        padding: 10px; 
+    }
+    a#logomarca {
+        color: var(--cinza-claro);
+        font-size: 20px;
+    }
+    ul {
+        display: inline-block;
+    }
+    #botoes-menu > li {
+        display: inline-block;
+    }
+    #botoes-menu > li > button {
+        cursor: pointer;
+        border: none;
+        border-radius: 50px;
+        background-color: var(--cor-secundaria);
+        color: var(--cinza-claro);
+        margin-left: 5px;
+    }
+    #botoes-menu > li#false > button {
+        background-color: var(--cinza-claro);
+        color: var(--cor-secundaria);
+    }
+    #botoes-menu > li#false > button:hover {
+        background-color: rgb(49, 49, 49);
+        color: var(--cinza-claro);
+    }
+    #botoes-menu > li > button:hover {
+        background-color: var(--cinza-claro);
+        color: var(--cor-secundaria);
+    }
+    section > h1 {
+        color: var(--cor-primaria);
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+    div.border {
+        width: 100%;
+        height: 1px;
+        background: var(--cor-primaria);
+    }
+    div.border > div.em {
+        width: 20%;
+        height: 2px;
+        background: var(--cor-secundaria);
+    }
+    section > p {
+        color: var(--cor-secundaria);
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: normal;
+        text-indent: 20px;
+        text-align: justify;
+    }
 }
