@@ -2,6 +2,7 @@
 @import url(../include/fontawesome/css/all.css);
 @import url(fonte.css);
 @import url(maps.css);
+@import url(carrossel.css);
 * {
     margin: 0px;
     padding: 0px;
@@ -34,37 +35,6 @@ header > nav {
 section {
     max-width: 1080px;
     margin: auto;
-}
-.carousel-container {
-    position: relative;
-    max-width: 90%;
-    overflow: hidden;
-    margin: auto;
-}
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    margin-top: 10px;
-}
-.carousel img {
-    width: 100%;
-    transition: opacity 0.5s ease-in-out;
-    border-radius: 150px;
-}
-.buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-.buttons button {
-    background: none;
-    color: var(--cor-primaria);
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
 }
 @media (max-width: 768px) {
     #menu-desktop {

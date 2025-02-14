@@ -30,6 +30,9 @@ ul {
     font-weight: bold;
     padding: 5px;
 }
+#botoes-menu > li#bt-login{
+    display: none;
+}
 #botoes-menu > li#false > button {
     background-color: var(--cinza-claro);
     color: var(--cor-secundaria);
@@ -53,6 +56,32 @@ ul {
     background-color: rgb(49, 49, 49);
     border-radius: 50px;
 }
+section > h1 {
+    color: var(--cor-primaria);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+div.border {
+    width: 100%;
+    height: 1px;
+    background: var(--cor-primaria);
+}
+div.border > div.em {
+    width: 20%;
+    height: 2px;
+    background: var(--cor-secundaria);
+}
+section > p {
+    color: var(--cor-secundaria);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    text-indent: 20px;
+    text-align: justify;
+}
 @media only screen and (max-width: 1080px) { /* and (pointer: coarse) */
-    
+    #botoes-menu > li#bt-login{
+        display: inline-block;
+    }    
 }

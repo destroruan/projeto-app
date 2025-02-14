@@ -13,11 +13,6 @@
         margin-top: 10px;
     }
     #controls { 
-        position: absolute;
-        order: initial;
-        top: 89%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         z-index: 10;
         background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo suave */
         padding: 10px; 
@@ -28,10 +23,6 @@
     }
     input, button { 
         padding: 5px; 
-        border: 0px;
-        cursor: pointer;
-        font-size: 10px;
-        margin: auto;
     }
     .route-info {
         position: absolute;
