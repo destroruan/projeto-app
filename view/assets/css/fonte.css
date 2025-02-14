@@ -80,7 +80,7 @@ section > p {
     text-indent: 20px;
     text-align: justify;
 }
-@media only screen and (max-width: 1080px) { /* and (pointer: coarse) */
+@media only screen and (max-width: 1080px) and (pointer: coarse){ /*  */
     #botoes-menu > li#bt-login{
         display: inline-block;
     }    
