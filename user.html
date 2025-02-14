@@ -51,13 +51,20 @@
     
         function getUserLocation() {
             if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(position => {
-                    console.log(position);  // Adicionado para depuração
-                    const { latitude, longitude } = position.coords;
-                    document.getElementById('start').value = `${latitude},${longitude}`;
-                }, error => {
-                    console.warn('Erro ao obter localização:', error);
-                });
+                navigator.geolocation.getCurrentPosition(
+                    position => {
+                        console.log(position);
+                        const { latitude, longitude } = position.coords;
+                        document.getElementById('start').value = `${latitude},${longitude}`;
+                    },
+                    error => {
+                        console.warn('Erro ao obter localização:', error);
+                        if (error.code === error.PERMISSION_DENIED) {
+                            alert("Permissão de localização negada. Ative a localização nas configurações do Safari.");
+                        }
+                    },
+                    { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+                );
             } else {
                 alert('Geolocalização não suportada pelo navegador.');
             }
