@@ -1,8 +1,14 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+body, html {
+    font-size: 10px;
+}
 a {
     text-decoration: none;
     color: black;
+}
+button {
+    font-size: 10px;   
 }
 header > nav > div {
     display: flex;
@@ -28,10 +34,7 @@ ul {
     background-color: var(--cor-secundaria);
     color: var(--cinza-claro);
     font-weight: bold;
-    padding: 5px;
-}
-#botoes-menu > li#bt-login{
-    display: none;
+    padding: 10px;
 }
 #botoes-menu > li#false > button {
     background-color: var(--cinza-claro);
@@ -47,7 +50,6 @@ ul {
 }
 #botoes-menu > li > i {
     display: block;
-    font-size: 14px;
     color: var(--cinza-claro);
     cursor: pointer;
     padding: 10px;
@@ -81,7 +83,5 @@ section > p {
     text-align: justify;
 }
 @media only screen and (max-width: 1080px) and (pointer: coarse){ /*  */
-    #botoes-menu > li#bt-login{
-        display: inline-block;
-    }    
+
 }

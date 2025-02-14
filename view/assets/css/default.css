@@ -14,33 +14,31 @@
     --cinza-claro: #F2F2F2; 
     --cinza-medio: #757575;
 }  
-body, html {
-    width: 100vw;
-    height: 100vh;
-    font-family: "Sora", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    overflow-x: hidden;
-}
-header {
-    height: 65px;
-    background-color: var(--cor-secundaria);
-}
-header > nav {
-    max-width: 1080px;
-    height: 65px;
-    margin: auto;
-}
-section {
-    max-width: 1080px;
-    margin: auto;
-}
-@media (max-width: 768px) {
-    #menu-desktop {
-        display: none;
+@media (max-width: 768px) { /* and (pointer: coarse) */
+    body, html {
+        width: 100vw;
+        height: 100vh;
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        overflow-x: hidden;
+    }
+    header {
+        height: 65px;
+        background-color: var(--cor-secundaria);
+    }
+    header > nav {
+        max-width: 90%;
+        height: 65px;
+        margin: auto;
+    }
+    section {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 10px;
     }
     ul#margin {
-        width: 40%;
+        width: 20%;
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Usuário</title>
     <link rel="stylesheet" href="view/assets/css/default.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
@@ -60,7 +60,7 @@
                     error => {
                         console.warn('Erro ao obter localização:', error);
                         if (error.code === error.PERMISSION_DENIED) {
-                            alert("Permissão de localização negada. Ative a localização nas configurações do Safari.");
+                            alert("Permissão de localização negada. Ative a localização nas configurações.");
                         }
                     },
                     { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
