@@ -26,3 +26,34 @@ function autoSlide() {
 }
 setTimeout(autoSlide, (1000)*5);
 
+self.addEventListener('install', (event) => {
+    console.log('Service Worker instalado');
+});
+
+self.addEventListener('fetch', (event) => {
+    console.log('Interceptando request:', event.request.url);
+});
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault(); // Evita o pop-up automático
+    deferredPrompt = e; // Armazena o evento para uso posterior
+    document.getElementById('addToHome').style.display = 'block'; // Exibe o botão quando disponível
+});
+
+document.getElementById('addToHome').addEventListener('click', () => {
+    if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('Usuário aceitou adicionar à tela inicial.');
+            } else {
+                console.log('Usuário recusou adicionar à tela inicial.');
+            }
+            deferredPrompt = null;
+        });
+    } else {
+        alert('Opção de adicionar à tela inicial não disponível.');
+    }
+});
