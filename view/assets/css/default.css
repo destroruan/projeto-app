@@ -20,7 +20,6 @@ body, html {
     font-weight: 500;
     font-style: normal;
     overflow-x: hidden;
-    background-color: var(--cinza-claro);
 }
 header {
     height: 65px;
@@ -30,6 +29,41 @@ header > nav {
     max-width: 1080px;
     height: 65px;
     margin: auto;
+}
+section {
+    max-width: 1080px;
+    margin: auto;
+}
+.carousel-container {
+    position: relative;
+    max-width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    margin-top: 10px;
+}
+.carousel img {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 150px;
+}
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.buttons button {
+    background: none;
+    color: var(--cor-primaria);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
 }
 @media (max-width: 768px) {
     #menu-desktop {
