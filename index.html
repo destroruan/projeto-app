@@ -40,16 +40,8 @@
         </section>
         <footer>
             <a href="#"><i class="fa-solid fa-home"></i>Home</a>
-            <a href="#" id="addToHome"><i class="fa-solid fa-plus"></i>Add</a>
         </footer>
     </main> 
     <script src="controller/js/defaut.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('controller/js/defaut.js')
-                .then(() => console.log('Service Worker registrado com sucesso!'))
-                .catch(error => console.log('Erro ao registrar Service Worker:', error));
-        }
-    </script> 
 </body>
 </html>
