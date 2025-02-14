@@ -52,6 +52,7 @@
         function getUserLocation() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(position => {
+                    console.log(position);  // Adicionado para depuração
                     const { latitude, longitude } = position.coords;
                     document.getElementById('start').value = `${latitude},${longitude}`;
                 }, error => {
